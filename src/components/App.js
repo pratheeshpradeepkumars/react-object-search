@@ -21,8 +21,8 @@ class App extends Component {
                 position: "Front End Developer"
             },
             {
-                name: "Emil George",
-                email: "emilg@gmail.com",
+                name: "Ed Davidson",
+                email: "eddav@gmail.com",
                 position: "Python Developer"
             },
             {
@@ -34,6 +34,21 @@ class App extends Component {
                 name: "Rana D",
                 email: "rana@gmail.com",
                 position: "Full Stack Developer"
+            },
+            {
+                name: "Maddy Dennis",
+                email: "maddydennis@gmail.com",
+                position: "Web Developer"
+            },
+            {
+                name: "Susan Samuel",
+                email: "susansamuel85@gmail.com",
+                position: "HR Assocaite"
+            },
+            {
+                name: "Glen Mikael",
+                email: "glenm22@gmail.com",
+                position: "Senior Project Specialist"
             }
         ]
     }
@@ -64,9 +79,10 @@ class App extends Component {
                 <div className="list">
                     {filteredData.map(list => {
                         return <div key={list.email} className="list__item">
+                            <img src="https://via.placeholder.com/150" alt=""/>
                             <h2>{list.name}</h2>
-                            <p>{list.position}</p>
-                            <p>{list.email}</p>
+                            <p className="position">{list.position}</p>
+                            <p className="email">{list.email}</p>
                         </div>
                     })}
                 </div> : 
